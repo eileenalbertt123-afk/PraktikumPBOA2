@@ -1,22 +1,11 @@
 /* Nama File      : Titik.java
  * Deskripsi      : berisi atribut dan method dalam class Titik
- * Pembuat        : 
- * Tanggal        : 
+ * Pembuat        : Eileen 24060124140180
+ * Tanggal        : 23 Januari 2026
  */
 
-public class MTitik {
-    public static void main(String[] args) {
-        Titik T1 = new Titik(); //Membuat objek titik T1 (0,0)
-        T1.setAbsis(3); //mengubah absis T1 dengan nilai 3
-        T1.setOrdinat(4); //mengubah ordinat T1 dengan nilai 4
-        T1.printTitik(); //mencetak koordinat T1 ke layar
-        T1.geser(3,4); //menggeser T1 sejauh (3,4)
-        T1.printTitik(); //menampilkan koordinat T1 setelah digeser
-    }
-}
-
 public class Titik {
-    /***************ATRIBUT***************/
+    /***************ATRIBUT**************/
     double absis;
     double ordinat;
 
