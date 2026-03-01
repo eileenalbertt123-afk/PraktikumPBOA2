@@ -1,7 +1,7 @@
-/* Nama File    : Titik.java
- * Deskripsi    : berisi atribut dan method dalam class Titik
+/* Nama File    : TMitik.java
+ * Deskripsi    : Menjalankan class Titik
  * Pembuat      : Eileen 240601241401880
- * Tanggal      : 23 Februari 206
+ * Tanggal      : 23 Februari 2026
  */
 
 public class MTitik {
