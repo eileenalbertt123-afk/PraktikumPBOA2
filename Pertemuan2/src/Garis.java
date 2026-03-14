@@ -48,19 +48,19 @@ public class Garis {
 
     //mendapatkan panjang sebuah garis
     double getPanjang () {
-        double x1 = titik_awal.absis;
-        double x2 = titik_akhir.absis;
-        double y1 = titik_awal.ordinat;
-        double y2 = titik_akhir.ordinat;
+        double x1 = titik_awal.getAbsis();
+        double x2 = titik_akhir.getAbsis();
+        double y1 = titik_awal.getOrdinat();
+        double y2 = titik_akhir.getOrdinat();
         return Math.sqrt(((x2-x1)*(x2-x1)) + ((y2-y1)*(y2-y1)));
     }
 
     //mendapatkan gradien sebuah garis
     double getGradien () {
-        double x1 = titik_awal.absis;
-        double x2 = titik_akhir.absis;
-        double y1 = titik_awal.ordinat;
-        double y2 = titik_akhir.ordinat;
+        double x1 = titik_awal.getAbsis();
+        double x2 = titik_akhir.getAbsis();
+        double y1 = titik_awal.getOrdinat();
+        double y2 = titik_akhir.getOrdinat();
         if (x2-x1 == 0){
             return Double.POSITIVE_INFINITY; //tak hingga
         }
@@ -69,10 +69,10 @@ public class Garis {
 
     //mendapatkan titik tengah sebuah garis
     Titik getTitikTengah () {
-        double x1 = titik_awal.absis;
-        double x2 = titik_akhir.absis;
-        double y1 = titik_awal.ordinat;
-        double y2 = titik_akhir.ordinat;
+        double x1 = titik_awal.getAbsis();
+        double x2 = titik_akhir.getAbsis();
+        double y1 = titik_awal.getOrdinat();
+        double y2 = titik_akhir.getOrdinat();
         return new Titik((x1+x2)/2, (y1+y2)/2);
     }
 
@@ -88,15 +88,15 @@ public class Garis {
 
     //menampilkan ke layar titik awal dan titik akhir garis
     void printGaris () {
-        System.out.println("Titik Awal : (" + titik_awal.absis + "," + titik_awal.ordinat + ")");
-        System.out.println("Titik Akhir : (" + titik_akhir.absis + "," + titik_akhir.ordinat + ")");
+        System.out.println("Titik Awal : (" + titik_awal.getAbsis() + "," + titik_awal.getOrdinat() + ")");
+        System.out.println("Titik Akhir : (" + titik_akhir.getAbsis() + "," + titik_akhir.getOrdinat() + ")");
     }
 
     //menampilkan persamaan garis dalam bentuk string y = mx + c.
     String getPersamaanGaris() {
 
-    double x1 = titik_awal.absis;
-    double y1 = titik_awal.ordinat;
+    double x1 = titik_awal.getAbsis();
+    double y1 = titik_awal.getOrdinat();
 
     //garis vertikal
     if (getGradien() == Double.POSITIVE_INFINITY) {

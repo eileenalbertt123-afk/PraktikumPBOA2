@@ -4,6 +4,7 @@ Deskripsi   : Main class untuk menguji class Persegi dan Lingkaran
 Pembuat     : Eileen 24060124140180
 Tanggal     : 9 Maret 2026
 */
+package praktikum;
 
 public class MBangunDatar {
 

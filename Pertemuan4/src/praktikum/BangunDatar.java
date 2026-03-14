@@ -4,6 +4,7 @@ Deskripsi   : Berisi atribut dan method untuk kelas BangunDatar
 Pembuat     : Eileen 24060124140180
 Tanggal     : 9 Maret 2026
 */
+package praktikum;
 
 public class BangunDatar {
     /********ATRIBUT*********/
