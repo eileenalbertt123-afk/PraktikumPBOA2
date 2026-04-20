@@ -30,22 +30,25 @@ class Dosen extends civitasAkademika {
         this.NIP = NIP;
     }
 
+    @Override
     String getNomor(){
         return this.NIP;
     }
 }
 
-class Mahasiswa extends civitasAkademika{
+// Mahasiswa2 digunakan untuk menghindari konflik dengan class Mahasiswa pada soal sebelumnya
+class Mahasiswa2 extends civitasAkademika{
     //atribut
     String NIM;
     Dosen DosenWali;
 
     //Method
+    @Override
     String getNomor(){
         return this.NIM;
     }
 
-    Mahasiswa(String nama, String NIM) {
+    Mahasiswa2(String nama, String NIM) {
         this.Nama = nama;
         this.NIM = NIM;
     }
@@ -57,7 +60,7 @@ class Mahasiswa extends civitasAkademika{
 
     //j. prosedur tampilDataMahasiswa untuk menampilkan data NIM, nama mahasiswa dan nama dosen wali
     void tampilDataMahasiswa(){
-        System.err.println("NIM: " + NIM);
+        System.out.println("NIM: " + NIM);
         System.out.println("Nama: " + Nama);
         System.out.println("Dosen Wali: " + DosenWali.getNama());
     }
@@ -101,7 +104,7 @@ class Seminar{
     int countMahasiswa(){
         int count = 0;
         for (int i = 0; i < banyakPeserta; i++){
-            if (pesertas[i] instanceof Mahasiswa) {
+            if (pesertas[i] instanceof Mahasiswa2) {
                 count++;
             }
         }
@@ -120,11 +123,11 @@ public class Main4 {
         Dosen d2 = new Dosen("Bu Sari", "D002");
 
         // e. buat 5 mahasiswa
-        Mahasiswa m1 = new Mahasiswa("Andi", "M001");
-        Mahasiswa m2 = new Mahasiswa("Budi", "M002");
-        Mahasiswa m3 = new Mahasiswa("Citra", "M003");
-        Mahasiswa m4 = new Mahasiswa("Dina", "M004");
-        Mahasiswa m5 = new Mahasiswa("Eka", "M005");
+        Mahasiswa2 m1 = new Mahasiswa2("Andi", "M001");
+        Mahasiswa2 m2 = new Mahasiswa2("Budi", "M002");
+        Mahasiswa2 m3 = new Mahasiswa2("Citra", "M003");
+        Mahasiswa2 m4 = new Mahasiswa2("Dina", "M004");
+        Mahasiswa2 m5 = new Mahasiswa2("Eka", "M005");
 
         // i. set dosen wali
         m1.setWali(d1);
@@ -159,5 +162,6 @@ public class Main4 {
         m3.tampilDataMahasiswa();
         m4.tampilDataMahasiswa();
         m5.tampilDataMahasiswa();
+        System.out.println("------------------");
     }
 }
