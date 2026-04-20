@@ -63,6 +63,7 @@ class Mahasiswa2 extends civitasAkademika{
         System.out.println("NIM: " + NIM);
         System.out.println("Nama: " + Nama);
         System.out.println("Dosen Wali: " + DosenWali.getNama());
+        System.out.println("------------------");
     }
 }
 
