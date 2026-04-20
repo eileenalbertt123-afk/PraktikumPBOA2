@@ -36,7 +36,11 @@ class Dosen extends civitasAkademika {
     }
 }
 
+<<<<<<< HEAD
 // Mahasiswa2 digunakan untuk menghindari konflik dengan class Mahasiswa pada soal sebelumnya
+=======
+// Mahasiswa2 digunakan untuk menghindari konflik dengan class Mahasiswa di file lain
+>>>>>>> pertemuan7
 class Mahasiswa2 extends civitasAkademika{
     //atribut
     String NIM;
